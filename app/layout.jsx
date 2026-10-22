@@ -2,6 +2,7 @@ import './reference.css';
 import './globals.css';
 import 'lenis/dist/lenis.css';
 import SmoothScroll from './smooth-scroll';
+import AssetLoader from './asset-loader';
 
 export const metadata = {
   title: 'D-Mall OFFICIAL — Shopify, Digital Marketing & Training',
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <SmoothScroll>{children}</SmoothScroll>
+        <AssetLoader><SmoothScroll>{children}</SmoothScroll></AssetLoader>
       </body>
     </html>
   );
