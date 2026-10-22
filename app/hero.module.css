@@ -1,0 +1,44 @@
+.section { box-sizing: border-box; width: 100%; padding: 164px 60px 160px; position: relative; overflow: visible; }
+.container { width: 100%; max-width: 1200px; margin: auto; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: center; gap: 68px; }
+.leftCol { display: flex; flex-direction: column; align-items: flex-start; gap: 60px; min-width: 0; }
+.copyArea { display: flex; flex-direction: column; align-items: flex-start; gap: 28px; width: 100%; }
+.heroLabel { transform: rotate(-2deg); }
+.heroLabel > span { transform: none; }
+.headingCopy { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+.headline { font: 600 72px/1 'Open Runde',sans-serif; letter-spacing: -.03em; color: #171717; margin: 0; text-wrap: balance; }
+.headlineWord { display: inline-block; animation: wordFadeIn .65s cubic-bezier(.22,1,.36,1) both; }
+@keyframes wordFadeIn { from { opacity: 0; transform: translateY(12px); filter: blur(6px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } }
+.subtitle { font: 400 20px/1.5 'Open Runde',sans-serif; letter-spacing: -.01em; color: #474747; margin: 0; text-wrap: balance; }
+.subtitleWord { display: inline-block; white-space: pre; }
+.subtitleWord > span { display: inline-block; animation: letterFadeIn .6s both; }
+@keyframes letterFadeIn { from { opacity: 0; transform: translateY(10px); filter: blur(10px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } }
+.buttonsRow { display: flex; align-items: center; gap: 16px; width: 100%; }
+.primaryBtn, .secondaryBtn { display: inline-flex; flex: none; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 12px; padding: 12px 20px; color: #171717; background: #fff; text-decoration: none; font: 600 16px/1.6 'Open Runde',sans-serif; letter-spacing: -.01em; }
+.primaryBtn { background: #171717; color: #fff; box-shadow: 0 1px 1px #0002,0 6px 4px -1px #0002,0 16px 10px -2px #0002,0 50px 30px -2.5px #0002; }
+.secondaryBtn:hover { color: #40b9db; }
+.liveBadgeRow { display: flex; align-items: stretch; gap: clamp(18px,2.4vw,32px); width: 100%; }
+.officialColumn, .liveRecorded { display: flex; flex: none; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 14px; }
+.ratingStars { display: flex; align-items: center; gap: 4px; min-height: 32px; color: #ff9b50; }
+.ratingStars svg { display: block; flex: none; }
+.liveOfficial, .liveText { font: 400 14px/1.5 'Open Runde',sans-serif; letter-spacing: -.01em; color: #474747; white-space: nowrap; }
+.badgeDivider { width: 1px; align-self: stretch; background: #e6e6e6; border-radius: 12px; }
+.avatarStack { display: flex; align-items: center; gap: 8px; min-height: 32px; }
+.avatarItem { flex: none; border: 0; border-radius: 5px; object-fit: cover; box-shadow: 0 6px 12px #00000014; }
+.rightCol { position: relative; display: flex; flex-direction: column; align-items: center; min-width: 0; }
+.videoCard { position: relative; width: 100%; height: 592px; border-radius: 28px; overflow: hidden; box-shadow: 0 1px 1px #00000012,0 6px 4px -1px #00000014,0 16px 11px -1px #00000017,0 50px 35px -1.5px #00000026; background: #000; }
+.heroVideo { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tickerViewport { position: absolute; bottom: -76px; left: 0; right: 0; height: 216px; padding: 10px; overflow: hidden; pointer-events: none; mask-image: linear-gradient(to bottom, transparent, #000 20.5%, #000 79.5%, transparent); }
+.tickerTrack { display: flex; flex-direction: column; align-items: center; gap: 20px; animation: scrollTicker 12s linear infinite; }
+@keyframes scrollTicker { to { transform: translateY(calc(-50% - 10px)); } }
+.tickerCard { box-sizing: border-box; flex: none; width: 325px; max-width: 100%; height: 81px; padding: 12px 16px; background: #fff9; backdrop-filter: blur(7px); border: 1px solid #e6e6e6; border-radius: 16px; display: flex; align-items: center; gap: 14px; }
+.tickerLogoWrap { position: relative; width: 48px; height: 48px; border: 1px solid #ffffffd9; border-radius: 12px; overflow: hidden; flex: none; background: #fffffff0; box-shadow: 0 1px 2px #172d3808,0 4px 10px #172d3808; }
+/* Account for the transparent margins in the original wide logo without cropping its mark. */
+.tickerLogo { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 68px; max-width: none; height: 44px; object-fit: contain; display: block; }
+.tickerContent { display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1; }
+.tickerTop { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.tickerTitle { font: 600 14px/1.5 'Open Runde',sans-serif; color: #171717; white-space: nowrap; }
+.tickerTag { font: 400 12px/1.5 'Open Runde',sans-serif; letter-spacing: -.01em; color: #474747; white-space: nowrap; }
+.tickerSubtitle { font: 400 14px/1.5 'Open Runde',sans-serif; letter-spacing: -.01em; color: #474747; }
+@media (min-width: 810px) and (max-width: 1199.98px) { .section { padding: 160px 40px 140px; } .container { grid-template-columns: 1fr; } .headingCopy { max-width: 730px; } .headline { font-size: 60px; } .subtitle { font-size: 16px; } }
+@media (max-width: 809.98px) { .section { padding: 120px 20px; } .container { grid-template-columns: 1fr; max-width: 360px; gap: 52px; } .leftCol { gap: 44px; } .headline { font-size: 48px; } .subtitle { font-size: 16px; } .buttonsRow { flex-direction: column; } .primaryBtn, .secondaryBtn { width: 100%; } .liveBadgeRow { flex-direction: row; justify-content: flex-start; align-items: stretch; gap: 24px; } .officialColumn, .liveRecorded { align-items: flex-start; } .badgeDivider { display: block; } .videoCard { height: 388px; } }
+@media (prefers-reduced-motion: reduce) { .headlineWord, .subtitleWord > span, .tickerTrack { animation: none; opacity: 1; transform: none; filter: none; } }

@@ -1,0 +1,11 @@
+.section { box-sizing: border-box; width: 100%; padding: 0 60px 80px; }
+.container { display: flex; flex-direction: column; align-items: center; gap: 40px; width: 100%; max-width: 1200px; margin: auto; }
+.header { display: flex; flex-direction: column; align-items: center; gap: 24px; width: 100%; }
+.text { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; }
+.title { position: relative; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 16px; width: 650px; max-width: 100%; margin: 0; font: 600 60px/1.1 'Open Runde', sans-serif; letter-spacing: -.03em; color: #171717; }
+.title > span { display: inline-block; }
+.videoFrame { position: relative; width: 56px; height: 56px; flex: none; border-radius: 12px; overflow: hidden; transform: rotate(5deg); box-shadow: 0 1px 1px #0000000a, 0 6px 4px -1px #0000000a, 0 16px 11px -1px #0000000d, 0 50px 35px -1.5px #00000014; }
+.video { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+.text > p { width: 456px; max-width: 100%; margin: 0; font: 400 16px/1.6 'Open Runde', sans-serif; letter-spacing: -.01em; text-align: center; color: #474747; text-wrap: balance; }
+@media (min-width: 810px) and (max-width: 1199.98px) { .section { padding: 0 40px 80px; } .title { font-size: 48px; } }
+@media (max-width: 809.98px) { .section { padding: 0 20px 40px; } .container { max-width: 360px; } .title { width: 100%; font-size: 40px; } .videoFrame { width: 48px; height: 48px; } .text > p { width: 100%; } }

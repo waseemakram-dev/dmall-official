@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+let component=fs.readFileSync('app/hero.jsx','utf8');
+component=component.replace("  const [menu, setMenu] = useState(false);\n",'').replace('setTraining(false);setMenu(false);','setTraining(false);');
+const start=component.indexOf('    <header className="clone-nav" hidden>');
+const end=component.indexOf('    </header>',start);
+if(start>=0&&end>=0)component=component.slice(0,start)+component.slice(end+'    </header>\n'.length);
+fs.writeFileSync('app/hero.jsx',component);
+let readme=fs.readFileSync('README.md','utf8').replace('Header SVG is recreated','The original header and SVG definitions are preserved');
+fs.writeFileSync('README.md',readme);
+let css=fs.readFileSync('app/globals.css','utf8');
+css+='\n.reference-root .framer-n9y6O .framer-tckrrw{display:grid!important;grid-template-columns:max-content;grid-template-rows:25px;align-items:start!important;justify-content:start!important;overflow:hidden!important}\n.reference-root .framer-n9y6O .framer-tckrrw>div{grid-area:1/1!important;transform:translateY(0)!important;transition:transform .4s cubic-bezier(.22,1,.36,1)}\n.reference-root .framer-n9y6O .framer-tckrrw>div:nth-child(2){transform:translateY(100%)!important}\n.reference-root .framer-n9y6O:hover .framer-tckrrw>div:first-child{transform:translateY(-100%)!important}\n.reference-root .framer-n9y6O:hover .framer-tckrrw>div:nth-child(2){transform:translateY(0)!important}\n';
+fs.writeFileSync('app/globals.css',css);
+console.log('Finalized original header and shared reference button hover.');

@@ -1,0 +1,20 @@
+{
+  "name": "monetize-reference-rebuild",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3000",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 3000"
+  },
+  "dependencies": {
+    "lenis": "^1.3.27",
+    "motion": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "cheerio": "latest"
+  }
+}

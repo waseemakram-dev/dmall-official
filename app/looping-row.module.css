@@ -1,0 +1,8 @@
+.viewport { width: 100%; overflow: hidden; mask-image: linear-gradient(to right, transparent, #000 12.5%, #000 87.5%, transparent); }
+.track { display: flex; width: max-content; animation: drift 40s linear infinite; animation-play-state: paused; }
+.group { display: flex; flex: none; align-items: stretch; gap: 20px; padding-right: 20px; }
+.reverse { animation-direction: reverse; }
+.viewport[data-visible='true'] .track { animation-play-state: running; }
+.viewport:is(:hover, :focus-within) .track { animation-play-state: paused; }
+@keyframes drift { from { transform: translateX(0); } to { transform: translateX(calc(-1 * var(--loop-distance))); } }
+@media (prefers-reduced-motion: reduce) { .viewport .track { animation: none; } }

@@ -1,0 +1,15 @@
+.viewport { position: relative; width: 100%; height: 100%; outline-offset: 4px; }
+.track { display: flex; align-items: stretch; gap: 24px; height: 100%; touch-action: pan-y; cursor: grab; }
+.slide { flex: 0 0 var(--slide-size, 100%); width: var(--slide-size, 100%); min-width: 0; height: 100%; }
+.withArrows { display: flex; flex-direction: column; gap: 24px; height: auto; }
+.withArrows .track { height: auto; }
+.withArrows .slide { display: flex; height: auto; }
+.withArrows .slide > * { width: 100%; }
+.arrows { position: relative; display: flex; justify-content: flex-start; align-items: center; gap: 10px; }
+.arrows button { display: grid; place-items: center; flex: none; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 50%; color: #fff; background: #171717; cursor: pointer; transition: background .2s, transform .2s; }
+.arrows button:hover { background: #343434; }
+.arrows button:active { transform: scale(.94); }
+.dots { position: absolute; bottom: 12px; left: 0; right: 0; display: none; justify-content: center; gap: 10px; }
+.dots button { box-sizing: border-box; width: 10px; height: 10px; padding: 0; border: 0; border-radius: 50%; background: #171717; opacity: .2; cursor: pointer; }
+.dots button[aria-current='true'] { opacity: 1; }
+@media (max-width: 809.98px) { .dots { display: flex; } }

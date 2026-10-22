@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import * as cheerio from 'cheerio';
+const $=cheerio.load(fs.readFileSync(path.resolve('../../work/monetize-source.html'),'utf8'));
+const section=$('[data-framer-name="Section/Preview"]').first();
+if(!section.length)throw new Error('Preview section missing');
+section.attr('id','free-preview');
+section.find('script,input[aria-hidden="true"]').remove();
+section.find('input[type="email"]').attr('aria-label','Your email').attr('autocomplete','email').removeAttr('value');
+section.find('video').attr('src','/assets/giZNSxxsU70FwAyC41BzhRuSKU.mp4');
+section.find('*').each((_,el)=>{for(const key of Object.keys(el.attribs||{}))if(/^on/i.test(key))$(el).removeAttr(key);});
+fs.writeFileSync('app/preview-reference.json',JSON.stringify({html:$.html(section)}));
+console.log('Extracted original preview section, heading video and form.');

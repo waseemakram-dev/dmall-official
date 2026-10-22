@@ -1,0 +1,6 @@
+.window { display: grid; grid-template: 1.6em / max-content; overflow: hidden; line-height: 1.6; }
+.window > span { grid-area: 1 / 1; display: block; white-space: nowrap; transition: transform .4s cubic-bezier(.22,1,.36,1); }
+.window > span + span { transform: translateY(100%); }
+a:is(:hover, :focus-visible) .window > span:first-child { transform: translateY(-100%); }
+a:is(:hover, :focus-visible) .window > span + span { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .window > span { transition: none; } }

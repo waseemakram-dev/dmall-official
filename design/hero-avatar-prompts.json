@@ -1,0 +1,24 @@
+{
+  "mode": "Built-in image_gen",
+  "note": "First two portraits recompose the supplied photo. Last two faces are fictional decorative avatars.",
+  "jobs": [
+    {
+      "prompt": "Use case: identity-preserve. Edit the provided reference photograph to create a separate individual portrait of ONLY the man in the foreground at the far right wearing a dark blue kurta, looking down at a laptop. Preserve that specific man's facial identity, dark hair, short beard and blue clothing. Recompose as a natural three-quarter portrait, gently looking toward camera, maintaining his actual facial structure. Remove the other two men, laptop and signage from the composition. Output one square 1:1 realistic editorial head-and-shoulders portrait for a tiny rounded website avatar. Soft natural office daylight, softly blurred pale grey office background, warm natural skin texture, shoulders visible, face centered and filling the upper central 60% of image, relaxed professional expression, clean headroom, no text, no watermark, no logos, no collage, no frame. Do not beautify heavily or make plastic AI skin.",
+      "referenced_image_paths": [
+        "C:\\Users\\Wasee\\AppData\\Local\\Temp\\codex-clipboard-7702d51c-688a-4733-ae83-1ebf981e8419.png"
+      ]
+    },
+    {
+      "prompt": "Use case: identity-preserve. Edit the provided reference photograph to create a separate individual portrait of ONLY the seated man in the middle/right wearing a white shalwar kameez, with short black hair and a full neatly trimmed dark beard. Preserve that specific man's identity and white clothing; exclude the blue-clothed man at far right and the man at far left wearing glasses. Recompose the white-clothed man as a natural three-quarter portrait gently looking toward camera, retaining his facial structure. Output one square 1:1 realistic editorial head-and-shoulders portrait for a tiny rounded website avatar. Soft natural office daylight, softly blurred pale grey office background, warm natural skin texture, shoulders visible, face centered and filling the upper central 60% of image, relaxed professional expression, clean headroom, no text, no watermark, no logos, no collage, no frame. Do not beautify heavily or make plastic AI skin.",
+      "referenced_image_paths": [
+        "C:\\Users\\Wasee\\AppData\\Local\\Temp\\codex-clipboard-7702d51c-688a-4733-ae83-1ebf981e8419.png"
+      ]
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Create one fictional South Asian young adult man, age around 24, short wavy black hair, clean shaven, wearing a muted charcoal casual shirt, slight friendly smile. This is an illustrative avatar character, not an actual student or a celebrity. Output one square 1:1 realistic editorial head-and-shoulders portrait for a tiny rounded website avatar. Soft natural office daylight, softly blurred pale grey office background, warm natural skin texture, shoulders visible, face centered and filling the upper central 60% of image, relaxed professional expression, clean headroom, no text, no watermark, no logos, no collage, no frame. Do not beautify heavily or make plastic AI skin."
+    },
+    {
+      "prompt": "Use case: photorealistic-natural. Create one fictional South Asian young adult man, age around 28, short neatly styled black hair, subtle stubble beard, wearing a pale sage green casual shirt, slight friendly smile. Distinct facial structure, a broader face and rectangular thin dark glasses. This is an illustrative avatar character, not an actual student or a celebrity. Output one square 1:1 realistic editorial head-and-shoulders portrait for a tiny rounded website avatar. Soft natural office daylight, softly blurred pale grey office background, warm natural skin texture, shoulders visible, face centered and filling the upper central 60% of image, relaxed professional expression, clean headroom, no text, no watermark, no logos, no collage, no frame. Do not beautify heavily or make plastic AI skin."
+    }
+  ]
+}

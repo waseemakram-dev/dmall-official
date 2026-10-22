@@ -1,0 +1,16 @@
+.section { box-sizing: border-box; width: 100%; padding: 100px 60px; overflow: clip; }
+.container { position: relative; isolation: isolate; width: 100%; max-width: 1200px; margin: auto; }
+.container::after { content: ''; position: absolute; inset: 15% 0; z-index: 1; background: radial-gradient(ellipse at center,#f5f5f5f5 0%,#f5f5f5d9 30%,#f5f5f580 55%,#f5f5f500 78%); pointer-events: none; }
+.backdrop { position: relative; z-index: 0; display: flex; flex-direction: column; gap: 20px; width: 100%; opacity: .28; pointer-events: none; user-select: none; }
+.header { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; width: 100%; padding: 24px; box-sizing: border-box; pointer-events: none; }
+.header > span, .header > a { pointer-events: auto; }
+.header h2 { width: 650px; max-width: 100%; margin: 0; text-align: center; color: #171717; font: 600 60px/1.1 'Open Runde', sans-serif; letter-spacing: -.03em; text-wrap: balance; }
+.button { display: inline-flex; align-items: center; gap: 12px; padding: 12px 20px; background: #171717; border-radius: 12px; color: #fff; font: 600 16px/1.6 'Open Runde', sans-serif; letter-spacing: -.01em; text-decoration: none; box-shadow: 0 1px 1px #0002,0 6px 4px -1px #0002,0 16px 10px -2px #0002,0 40px 25px -3px #0002; }
+.card { box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; width: 360px; height: 367px; padding: 36px; border-radius: 24px; background: #fff; flex: none; }
+.card > p { width: 100%; margin: 0; text-align: center; color: #171717; font: 400 20px/1.5 'Open Runde', sans-serif; letter-spacing: -.01em; text-wrap: balance; }
+.author { display: flex; align-items: center; justify-content: center; gap: 16px; width: 100%; }
+.author img { width: 36px; height: 36px; border-radius: 6px; object-fit: cover; box-shadow: 0 6px 12px #0000000a; }
+.author span { color: #474747; font: 400 16px/1.6 'Open Runde', sans-serif; letter-spacing: -.01em; }
+.tag { transform: rotate(2deg); }
+@media (min-width: 810px) and (max-width: 1199.98px) { .section { padding: 80px 40px; } .header h2 { font-size: 48px; } .card > p { font-size: 16px; } }
+@media (max-width: 809.98px) { .section { padding: 40px 20px; } .container { max-width: 360px; } .header { padding-inline: 8px; } .header h2 { font-size: 40px; } .button { gap: 8px; padding-inline: 16px; font-size: 14px; } .card { width: 320px; height: 330px; padding: 28px; } .card > p { font-size: 16px; } }

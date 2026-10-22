@@ -1,0 +1,173 @@
+.section {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 100px 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header h3 {
+  flex: none;
+  width: 489px;
+  max-width: 100%;
+  margin: 0;
+  font: 600 52px/1.1 'Open Runde', sans-serif;
+  letter-spacing: -.03em;
+  color: #171717;
+  text-wrap: balance;
+}
+
+.header>p {
+  width: 400px;
+  margin: 0;
+  font: 400 16px/1.6 'Open Runde', sans-serif;
+  letter-spacing: -.01em;
+  color: #474747;
+  text-wrap: balance;
+}
+
+.label {
+  position: absolute;
+  left: 71px;
+  top: 52%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 16px;
+  width: 100%;
+  height: 540px;
+}
+
+.card {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #171c1f;
+  box-shadow: 0 1px 1px #0000000a, 0 6px 4px -1px #0000000a, 0 16px 11px -1px #0000000d, 0 50px 35px -1.5px #00000014;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.visualSlot {
+  position: relative;
+  width: 100%;
+  flex: 1 1 0;
+  min-height: 0;
+}
+
+.cardText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  flex: none;
+}
+
+.cardText h5 {
+  margin: 0;
+  font: 600 24px/1.3 'Open Runde', sans-serif;
+  letter-spacing: -.03em;
+  color: #fff;
+  text-wrap: balance;
+}
+
+.cardText p {
+  margin: 0;
+  font: 400 16px/1.6 'Open Runde', sans-serif;
+  letter-spacing: -.01em;
+  color: #e3e3e3;
+  text-wrap: balance;
+}
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .section {
+    padding: 80px 40px;
+  }
+
+  .header h3 {
+    font-size: 44px;
+  }
+  .cardText h5 { font-size: 19px; }
+}
+
+@media (max-width: 809.98px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 360px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .header h3 {
+    order: 1;
+    width: 100%;
+    font-size: 32px;
+  }
+  .cardText h5 { font-size: 20px; }
+
+  .header>p {
+    order: 2;
+    width: 100%;
+  }
+
+  .label {
+    position: relative;
+    top: auto;
+    left: auto;
+    order: 0;
+    transform: none;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card {
+    flex: none;
+    min-height: 320px;
+    height: auto;
+  }
+  .visualSlot { flex: none; height: 125px; }
+}

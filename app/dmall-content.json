@@ -1,0 +1,93 @@
+{
+  "brand": "D-Mall OFFICIAL",
+  "contact": {
+    "phone": "+92 326 8669646",
+    "email": "dmallofficial.pk@gmail.com",
+    "address": "1st Branch: Islamabad G-13/4 <br/> 2nd Branch: Kohat, Pindi Road, College Town, Bin-Asif Plaza, Office #7",
+    "whatsapp": "https://wa.me/923268669646"
+  },
+  "stats": {
+    "projects": "1120",
+    "clients": "1025",
+    "students": "49000",
+    "years": "5"
+  },
+  "services": [
+    {
+      "title": "🛒 1. Shopify Store Pakistan",
+      "desc": "💰 Rs. 7,999/-",
+      "icon": "fa-brands fa-shopify",
+      "features": "Fully Paid & Premium Customized Theme, 3 Months Plan + Free Domain, 40+ Products Listing, Banners + Logo + 2 Premium Apps, Mobile Optimized Store, Payment Gateway Integration, Basic SEO Setup",
+      "color": "blue"
+    },
+    {
+      "title": "🌍 2. Shopify Store International",
+      "desc": "💰 Rs. 9,999/-",
+      "icon": "fa-solid fa-globe",
+      "features": "Fully Paid Premium Theme, 3 Months Plan + Free Domain, 20+ Product Listing, High-Converting Banners & Branding, International Payment Setup, Currency Converter + Shipping Setup, Basic SEO Optimization",
+      "color": "blue"
+    },
+    {
+      "title": "🎯 3. TikTok Ads Manager Account",
+      "desc": "💰 Rs. 2,999/-",
+      "icon": "fa-brands fa-tiktok",
+      "features": "Verified & Approved Account, PK / UAE / USD Supported, Lifetime Suspension Warranty, Fast Activation, Basic Guidance Included",
+      "color": "blue"
+    },
+    {
+      "title": "🏢 4. TikTok Business Centre",
+      "desc": "💰 Rs. 4,999/-",
+      "icon": "fa-brands fa-tiktok",
+      "features": "3 Ads Managers Included, UAE & USD Verified, Lifetime Warranty, Self Top-Up Enabled, Secure Setup + Access Guidance",
+      "color": "blue"
+    },
+    {
+      "title": "📦 5. Shopify Complete Business Plan",
+      "desc": "💰 Rs. 19,999/-",
+      "icon": "fa-solid fa-rocket",
+      "features": "Shopify Store (PK / UAE / KSA), TikTok Complete Business Setup, Dropshipping Approval + Integration, 1st Ad Run By Expert Team, Lifetime Support Included, 2 Custom Services Free, Winning Product Research",
+      "color": "teal"
+    },
+    {
+      "title": "🇦🇪 6. UAE Complete Shopify Setup",
+      "desc": "💰 Rs. 25,000/-",
+      "icon": "fa-solid fa-building",
+      "features": "Fully Optimized Shopify Store, Dropshipping Supplier Integration, TikTok Business Centre (3 Ads Managers), Facebook Ads Manager + Page Setup, 20+ Winning Products Listing, First Ad Campaign By Team, UAE Market Targeting Setup",
+      "color": "purple"
+    },
+    {
+      "title": "🔥 Extra Facilities (All Plans)",
+      "desc": "Included absolutely free with every plan!",
+      "icon": "fa-solid fa-fire",
+      "features": "Fast Delivery (3–5 Days), Professional Support Team, Step-by-Step Guidance, Video Tutorials Included, Free Consultation, High-Converting Store Design, Future Upgrade Options",
+      "color": "orange"
+    }
+  ],
+  "training": {
+    "title": "🚀 D MALL SMC LTD – Shopify E-Commerce Training Program",
+    "desc": "Build your own successful online business with Pakistan’s trusted e-commerce company. 3+ years experience with 1000+ successful students. 👉 Check our student success in the Review Section.",
+    "badge": "Best Seller",
+    "duration": "45 Days",
+    "format": "Live + Recorded",
+    "formatIcon": "fa-solid fa-video",
+    "icon": "fa-brands fa-shopify",
+    "features": "Complete Shopify E-Commerce Training, Personal 1-on-1 Guidance, 14 Detailed Lectures, Dedicated Private Group, First Live Sale Support, Official Company Certificate, Complete Business Startup Plan, Lifetime Access & Support",
+    "benefits": "1000+ Students Success, Practical Learning, First Earning From Team, Full Business Support System",
+    "price": "Join Now",
+    "theme": "primary"
+  },
+  "stories": [
+    "https://res.cloudinary.com/dj4rfocct/image/upload/v1792675571/wazemtech/dmall/dmall-result-1-70aba726ff.webp",
+    "https://res.cloudinary.com/dj4rfocct/image/upload/v1792675572/wazemtech/dmall/dmall-result-2-90d7c3a24c.webp",
+    "https://res.cloudinary.com/dj4rfocct/image/upload/v1792675573/wazemtech/dmall/dmall-result-3-24b521217c.webp",
+    "https://res.cloudinary.com/dj4rfocct/image/upload/v1792675574/wazemtech/dmall/dmall-result-4-4505bc4e1c.webp",
+    "https://res.cloudinary.com/dj4rfocct/image/upload/v1792675575/wazemtech/dmall/dmall-result-5-4505bc4e1c.webp"
+  ],
+  "sources": [
+    "https://www.dmallofficial.com/",
+    "https://www.dmallofficial.com/services",
+    "https://www.dmallofficial.com/trainings",
+    "https://www.dmallofficial.com/success",
+    "https://www.dmallofficial.com/api/load.php"
+  ]
+}

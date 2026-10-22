@@ -1,0 +1,31 @@
+.label {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  max-width: 100%;
+  padding: 7px 14px;
+  border: 1px solid rgba(230, 230, 230, .7);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .64);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  box-shadow: 0 1px 4px #17171703;
+  transform: rotate(-5deg);
+  transform-origin: center;
+  transition: transform .4s cubic-bezier(.22, 1, .36, 1);
+}
+
+.text {
+  color: #40b9db;
+  font: 600 12px/1.5 'Open Runde', sans-serif;
+  letter-spacing: -.01em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.label:hover { transform: rotate(0); }
+@media (prefers-reduced-motion: reduce) { .label { transition: none; } }
